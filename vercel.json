@@ -1,9 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/bgl.js", "use": "@vercel/node" }
+    { "src": "api/hijab.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/bugilin", "dest": "api/bgl.js", "methods": ["POST"] }
+    { "src": "/bugilin", "dest": "/api/hijab.js" }
   ]
 }
