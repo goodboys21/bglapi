@@ -14,9 +14,6 @@ const runMiddleware = (req, res, fn) =>
 module.exports = async (req, res) => {
   if (req.method !== "POST") return res.status(405).json({ success: false, message: "Metode tidak diizinkan." });
 
-  const apikey = req.query.apikey;
-  if (apikey !== "bagus") return res.status(403).json({ success: false, message: "API key salah!" });
-
   await runMiddleware(req, res, upload.single("file"));
 
   if (!req.file) return res.status(400).json({ success: false, message: "File tidak ditemukan!" });
