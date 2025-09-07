@@ -1,13 +1,14 @@
 {
-  "name": "sfile-uploader",
+  "name": "vercel-hijab-api",
   "version": "1.0.0",
+  "description": "API hijab otomatis dengan Pixnova dan CloudGood",
   "main": "api/bgl.js",
   "scripts": {
-    "start": "node api/bgl.js"
+    "start": "vercel dev"
   },
   "dependencies": {
-    "axios": "^1.6.8",
-    "form-data": "^4.0.0",
+    "axios": "^1.6.0",
+    "form-data": "^5.1.0",
     "multer": "^1.4.5-lts.1"
   }
 }
