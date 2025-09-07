@@ -4,6 +4,6 @@
     { "src": "api/bgl.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/bugilin", "dest": "api/bgl.js", "methods": ["POST"] }
+    { "src": "/api/bugilin", "dest": "api/bgl.js", "methods": ["POST"] }
   ]
 }
