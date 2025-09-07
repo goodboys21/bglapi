@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/bgl.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/bugilin",
+      "methods": ["POST"],
+      "dest": "api/bgl.js"
+    }
+  ]
+}
