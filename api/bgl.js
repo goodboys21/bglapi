@@ -12,11 +12,13 @@ const runMiddleware = (req, res, fn) =>
   });
 
 module.exports = async (req, res) => {
-  if (req.method !== "POST") return res.status(405).json({ success: false, message: "Metode tidak diizinkan." });
+  if (req.method !== "POST")
+    return res.status(405).json({ success: false, message: "Metode tidak diizinkan." });
 
   await runMiddleware(req, res, upload.single("file"));
 
-  if (!req.file) return res.status(400).json({ success: false, message: "File tidak ditemukan!" });
+  if (!req.file)
+    return res.status(400).json({ success: false, message: "File tidak ditemukan!" });
 
   try {
     // 1️⃣ Upload ke Pixnova
@@ -44,7 +46,7 @@ module.exports = async (req, res) => {
         call_type: 3,
         input: {
           source_image: uploadedPath,
-          prompt: "hijab",   // default
+          prompt: "nude",
           cloth_type: "full_outfits",
           request_from: 2,
           type: 1,
