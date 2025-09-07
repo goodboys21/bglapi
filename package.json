@@ -2,7 +2,7 @@
   "name": "vercel-hijab-api",
   "version": "1.0.0",
   "description": "API hijab otomatis dengan Pixnova dan CloudGood",
-  "main": "api/hijab.js",
+  "main": "api/bgl.js",
   "scripts": {
     "start": "vercel dev"
   },
