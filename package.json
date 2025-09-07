@@ -2,7 +2,7 @@
 {
   "name": "api-openai-image",
   "version": "1.0.0",
-  "main": "api/image.js",
+  "main": "api/hijab.js",
   "license": "MIT",
   "scripts": {
     "start": "node api/image.js"
